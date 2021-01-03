@@ -27,4 +27,19 @@ In this course you learn everything there is to learn about Spring Data JPA allo
 - `git checkout section-5`
 - `git checkout section-6`
 - `git checkout section-7`
-- `git checkout section-1`
+
+
+## Docker Configuration
+
+To make this spring boot project to run under docker, follow these steps
+
+```bash
+docker pull postgres:13-alpine
+docker run -d -it --name <CONTAINER_NAME> -p 5432:5432 -e POSTGRES_PASSWORD=<MY_PASSWORD> postgres:13-alpine
+```
+
+> NOTE: Replace <CONTAINER_NAME> and <MY_PASSWORD> with some values respectively 
+
+
+
+
